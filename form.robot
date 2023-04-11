@@ -2,7 +2,7 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${input_name}  id:name
+${input_name}  //label[@for="Name"]/../input
 ${input_phone}  id:phone
 ${input_email}  id:email
 ${input_password}  id:password
@@ -27,7 +27,7 @@ fechar navegador
     Close Browser
 
 *** Test Cases ***
-Cenário 1: Preencher formulário
+Cenário 1: Preencher textarea practice
     abrir navegador e acessar o site
     preencher campos
     clicar em submit

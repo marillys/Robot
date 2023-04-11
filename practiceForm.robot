@@ -36,9 +36,8 @@ preencher campos
     # List Selection Should Be    ${div_subjects}    Math
     Click Element    ${input_Sports}
     Scroll Element Into View  ${button_submit}
-    Element Should Be Visible  ${button_submit}
+    Wait Until Element Is Visible  ${button_submit}
     Click Element    ${button_submit}
-    Sleep    30
 
 preencher data de nascimento
     Click Element    ${input_dateOfBirthInput}
