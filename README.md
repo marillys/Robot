@@ -20,7 +20,39 @@ Primeiros passos utilizando o Robot Framework.
 - Incluir o chromeDriver na pasta de Scripts do python
 
 ## Como executar
-- Execute no terminal o comando:
+Os comandos abaixo são executados no terminal.
+- Comando básico:
     ````bash
     robot nomeArquivo.robot
     ````
+- Definindo uma pasta para salvar os arquivos de logs e os prints
+    ````bash
+    robot -d nomePastaEvidencias nomeArquivo.robot
+    ````
+- Executar somente um cenário de testes através do parametro -t
+    ````bash
+    robot -d nomePastaEvidencias -t "Nome do cenário"
+    ````
+- Executar somente testes de uma pasta específica
+    ````bash
+    robot -d nomePastaEvidencias nomePastaScripts
+    ````
+- Utilizando tags nos testes e executando através delas
+    ````bash
+    robot -d nomePastaEvidencias -i nomeTag testes
+    ````
+
+    Exemplo de cenário com tag
+    ````Python
+    Cenario 1: Executar vídeo no site do youtube
+        [Tags]  regressivo
+        Dado que eu acesso o site do youtube
+        Quando digito o nome da música
+        E clico no botão buscar
+        E clico na primeira opção da lista
+        Então o vídeo é executado
+
+    ````
+
+## Observações
+:warning: A automação do site de passagem aérea não está funcionando 100% por causa do capcha da tela de criar usuários.
