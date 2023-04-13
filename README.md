@@ -23,6 +23,7 @@ Primeiros passos utilizando o Robot Framework.
     pip install robotframework-faker
     ```
 - Incluir o chromeDriver na pasta de Scripts do python
+- Configurar o caminho da pasta do python no path
 
 ## Como executar
 Os comandos abaixo são executados no terminal.
@@ -65,4 +66,4 @@ Os comandos abaixo são executados no terminal.
 - [Robot Framework User Guide](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
 
 ## Observações
-:warning: A automação do site de passagem aérea não está funcionando 100% por causa do capcha da tela de criar usuários.
+:warning: A automação do site de passagem aérea não está funcionando 100% por causa do capcha da tela de criar usuários. Precisa incluir uma imagem com o nome profile.png no diretórios de [data](resource/data/)

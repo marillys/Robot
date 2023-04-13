@@ -1,6 +1,9 @@
 *** Settings ***
 Library  SeleniumLibrary
 Library  FakerLibrary  locale=pt_Br
+
+Documentation  Teste inicial utilizando o robot Framework.
+
 *** Variables ***
 ${input_name}  //label[@for="Name"]/../input
 ${input_phone}  id:phone
