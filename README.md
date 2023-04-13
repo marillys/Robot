@@ -9,13 +9,18 @@ Primeiros passos utilizando o Robot Framework.
 
 ## Pré-requisitos
 - Instalar o [Python](https://www.python.org/downloads/)
-- Instalar o Robot framework via pip
+- Instalar via pip 
+    - Robot framework
     ```cmd
     pip install robotframework
     ```
-- Instalar a biblioteca do selenium no robot
+    - Biblioteca do selenium no robot
     ```bash
     pip install robotframework-seleniumlibrary
+    ```
+    - Biblioteca do Faker
+    ```bash
+    pip install robotframework-faker
     ```
 - Incluir o chromeDriver na pasta de Scripts do python
 
@@ -53,6 +58,11 @@ Os comandos abaixo são executados no terminal.
         Então o vídeo é executado
 
     ````
+## Documentações
+- [Builtln](https://robotframework.org/robotframework/latest/libraries/BuiltIn.html#Wait%20Until%20Keyword%20Succeeds)
+- [FakerLibrary](https://guykisel.github.io/robotframework-faker/)
+- [Faker em português](https://github.com/tamnil/faker-br)
+- [Robot Framework User Guide](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
 
 ## Observações
 :warning: A automação do site de passagem aérea não está funcionando 100% por causa do capcha da tela de criar usuários.

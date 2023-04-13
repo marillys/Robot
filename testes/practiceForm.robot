@@ -52,4 +52,4 @@ preencher data de nascimento
 Cenario 1: Preencher formulário demoqa
     abrir navegador e acessar o site
     preencher campos
-    Close Browser
+    #Close Browser

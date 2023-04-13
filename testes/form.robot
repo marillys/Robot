@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-
+Library  FakerLibrary  locale=pt_Br
 *** Variables ***
 ${input_name}  //label[@for="Name"]/../input
 ${input_phone}  id:phone
@@ -14,7 +14,8 @@ abrir navegador e acessar o site
     Open Browser  https://itera-qa.azurewebsites.net/home/automation  chrome
 
 preencher campos
-    Input Text    ${input_name}         Marilia
+    ${nome}  FakerLibrary.First Name
+    Input Text    ${input_name}         ${nome}
     Input Text    ${input_phone}        999999999
     Input Text    ${input_email}        email@email.com
     Input Text    ${input_password}     123456
@@ -32,4 +33,4 @@ Cenário 1: Preencher textarea practice
     abrir navegador e acessar o site
     preencher campos
     clicar em submit
-    fechar navegador
+    #fechar navegador
