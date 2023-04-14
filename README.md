@@ -6,6 +6,7 @@ Primeiros passos utilizando o Robot Framework.
 - [QArentena 66: Robot Framework, por Mayara R. Fernandes](https://www.youtube.com/watch?v=r-Ju-O_miv0)
 - [QArentena 68: Automação Mobile no Clone do Nubank com Robot Framework, por Fernando Papito](https://www.youtube.com/watch?v=mOc5CG7FjoU)
 - [Aprenda Robot Framework](https://www.youtube.com/watch?v=wdtqpQrQ598&list=PL5ipcSFH2tk8RWxtvuaOK-qpdAvlWkSoo&index=2)
+- Formação em Teste de Software - Turma 133 - Iterasys
 
 ## Pré-requisitos
 - Instalar o [Python](https://www.python.org/downloads/)
@@ -45,8 +46,7 @@ Os comandos abaixo são executados no terminal.
     ````
 - Utilizando tags nos testes e executando através delas
     ````bash
-    robot -d nomePastaEvidencias -i nomeTag testes
-    ````
+    robot -d <nomePastaEvidencias> -i <nomeTag> <pasta dos testes a serem executados>
 
     Exemplo de cenário com tag
     ````Python
